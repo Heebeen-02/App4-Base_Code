@@ -43,22 +43,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-     	var allergy_count = 0;
-        var cold_count = 0; 
+     	var rightbrain_count = 0;
+        var leftbrain = 0; 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function rightbrainAdd(){
+            rightbrain_count = rightbrain_count + 1;
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function leftbrainAdd(){
+            leftbrain_count = leftbrain_count + 1;
         }
 	
 	function resultscalculator(){
 	var resultText = document.getElementById("resultspage");
-	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;
-	var coldPercent = (cold_count / (cold_count + allergy_count)) * 100;
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%"; //results output
+	var rightbrainPercent = (rightbrain_count / (rightbrain_count + rightbrain_count)) * 100;
+	var leftbrainPercent = (leftbrain_count / (leftbrain_count + rightbrain_count)) * 100;
+	resultText.innerHTML = "Probability you are rightbrain =" + rightbrainPercent + "%" + "<br> Probability you are leftbrain =" + leftbrainPercent + "%"; //results output
 	}
 		
 	
