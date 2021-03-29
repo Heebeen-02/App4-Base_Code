@@ -52,9 +52,9 @@ blah, blah, blah, blah
 	
 	function resultscalculator(){
 	var resultText = document.getElementById("resultspage");
-	var rightbrainPercent = (rightbrain_count / (rightbrain_count + rightbrain_count)) * 100;
-	var leftbrainPercent = (leftbrain_count / (leftbrain_count + rightbrain_count)) * 100;
-	resultText.innerHTML = "Probability it is allergies =" + rightPercent + "%" + "<br> Probability it is a cold =" + leftPercent + "%"; //results output
+	var rightPercent = (rightbrain_count / (rightbrain_count + rightbrain_count)) * 100;
+	var leftPercent = (leftbrain_count / (leftbrain_count + rightbrain_count)) * 100;
+	resultText.innerHTML = "Probability you are right brained =" + rightPercent + "%" + "<br> Probability you are left brained =" + leftPercent + "%"; //results output
 	}
 
 
